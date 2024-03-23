@@ -4,14 +4,19 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/view/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        white: 'var(--white)',
+        'gray-900':'var(--gray-900)',
+        'gray-800': 'var(--gray-800)',
+        'gray-700':'var(--gray-700)',
+        'gray-400':'var(--gray-400)',
+        'green-300':'var(--green-300)',
+        purple: 'var(--purple)'
+      }
     },
   },
   plugins: [],
