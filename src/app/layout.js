@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 import { Patrick_Hand as PatrickHand } from 'next/font/google'
+import AppProviders from "./providers";
+import { AppLayout } from "@/components/layouts/AppLayout";
 
 
 const patrickHand = PatrickHand({
@@ -15,7 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={patrickHand.className}>{children}</body>
+      <body className={patrickHand.className}>
+        <AppProviders>
+          <AppLayout>
+            {children}
+          </AppLayout>
+        </AppProviders>
+      </body>
     </html>
   );
 }
