@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { Patrick_Hand as PatrickHand } from 'next/font/google'
 import AppProviders from "./providers";
 import { AppLayout } from "@/components/layouts/AppLayout";
+import { Logo } from "@/components/layouts/Logo";
 
 
 const patrickHand = PatrickHand({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
             {children}
           </AppLayout>
         </AppProviders>
+        <Logo />
       </body>
     </html>
   );
