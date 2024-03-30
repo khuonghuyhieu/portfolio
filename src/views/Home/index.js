@@ -1,3 +1,11 @@
+'use client'
+
+import { InformationSection } from './components/InformationSection'
+
 export const HomeView = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      <InformationSection />
+    </div>
+  )
 }

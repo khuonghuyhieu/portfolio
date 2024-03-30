@@ -4,4 +4,5 @@ export default {
     DARK: '/images/logo_portfolio.png',
     LIGHT: '/images/logo_portfolio_white.png',
   },
+  AVATAR: '/images/avatar.jpg',
 }

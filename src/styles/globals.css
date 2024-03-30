@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --text-default: white;
+    --text-theme: white;
     --bg-background: black;
 
     /* color */
@@ -19,6 +20,7 @@
 
   [data-theme='light'] {
     --text-default: black;
+    --text-theme: black;
     --bg-background: white;
   }
 }
@@ -33,5 +35,30 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.avatar-custom {
+  width: 348px;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background-image: linear-gradient(45deg, #08aeea, #2af598, 100%);
+  background: url(../../public/images/avatar.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  animation: mor 8s ease-in-out infinite 1s;
+}
+
+@keyframes mor {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
