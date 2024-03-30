@@ -1,8 +1,8 @@
 'use client'
 
-import { Header } from "./Header"
+import { Header } from './Header'
 
-export const AppLayout = ({children}) => {
+export const AppLayout = ({ children }) => {
   return (
     <>
       <Header />

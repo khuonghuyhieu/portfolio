@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --text-default: white;
     --bg-background: black;
-  
+
     /* color */
     --white: #ffff;
-    --gray-900: #0C0C0D;
+    --gray-900: #0c0c0d;
     --gray-800: #131313;
     --gray-700: #272727;
-    --gray-400: #6F6F6F;
-    --green-300: #5FB9B0;
-    --purple: #B292FF;
+    --gray-400: #6f6f6f;
+    --green-300: #5fb9b0;
+    --purple: #b292ff;
   }
 
   [data-theme='light'] {
