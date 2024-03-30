@@ -4,6 +4,8 @@ import * as SwitchPrimitive from '@radix-ui/react-switch'
 import { cn } from '@/utils'
 
 const Switch = (props) => {
+  const { childrenThumb } = props
+
   return (
     <SwitchPrimitive.Root
       className={cn(
@@ -15,11 +17,13 @@ const Switch = (props) => {
     >
       <SwitchPrimitive.Thumb
         className={cn(
-          'pointer-events-none relative inline-block h-[26px] w-[26px] transform rounded-full border-white shadow-lg ring-0 transition duration-200 ease-in-out',
+          'pointer-events-none relative flex h-[26px] w-[26px] transform items-center justify-center rounded-full border-white shadow-lg ring-0 transition duration-200 ease-in-out',
           'data-[state=checked]:bg-black group-data-[state=checked]:translate-x-5', // checked
           'data-[state=unchecked]:bg-white group-data-[state=unchecked]:translate-x-0' // unchecked
         )}
-      />
+      >
+        {childrenThumb}
+      </SwitchPrimitive.Thumb>
     </SwitchPrimitive.Root>
   )
 }
