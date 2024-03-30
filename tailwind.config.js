@@ -20,6 +20,9 @@ module.exports = {
       textColor: {
         theme: 'var(--text-theme)',
       },
+      backgroundColor: {
+        theme: 'var(--bg-theme)',
+      },
     },
   },
   plugins: [],
