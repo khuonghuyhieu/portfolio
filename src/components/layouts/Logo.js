@@ -10,7 +10,9 @@ const ThemeLogo = () => {
 
   return (
     <div className="h-10 w-10">
-      {resolvedTheme === THEME.DARK && <img src={assets.LOGO.LIGHT} alt="logo" />}
+      {(resolvedTheme === THEME.DARK || resolvedTheme === THEME.DEFAULT) && (
+        <img src={assets.LOGO.LIGHT} alt="logo" />
+      )}
       {resolvedTheme === THEME.LIGHT && <img src={assets.LOGO.DARK} alt="logo" />}
     </div>
   )

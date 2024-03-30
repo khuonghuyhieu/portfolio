@@ -17,7 +17,11 @@ const SwitchTheme = () => {
   }
 
   const childrenThumb =
-    resolvedTheme === THEME.DARK ? <MdDarkMode color="black" /> : <MdOutlineLightMode />
+    resolvedTheme === THEME.DARK || resolvedTheme === THEME.DEFAULT ? (
+      <MdDarkMode color="black" />
+    ) : (
+      <MdOutlineLightMode />
+    )
 
   return (
     <div className="flex items-center gap-3 text-white">

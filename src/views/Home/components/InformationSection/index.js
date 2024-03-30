@@ -17,9 +17,13 @@ export const InformationSection = () => {
             customers.
           </p>
           <div className="mt-6 flex items-center gap-4 text-lg">
-            <button className="bg-theme rounded-full p-3 text-lg text-purple">
+            <a
+              href="/cv/Khuong_Huy_Hieu_resume.pdf"
+              download
+              className="rounded-full bg-theme p-3 text-lg text-purple"
+            >
               Download Resume
-            </button>
+            </a>
             <Link href={routes.EXPERIENCE} className="text-theme">
               See Experience
             </Link>
