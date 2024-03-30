@@ -1,9 +1,8 @@
-import "../styles/globals.css";
+import '../styles/globals.css'
 import { Patrick_Hand as PatrickHand } from 'next/font/google'
-import AppProviders from "./providers";
-import { AppLayout } from "@/components/layouts/AppLayout";
-import { Logo } from "@/components/layouts/Logo";
-
+import { AppLayout } from '@/components/layouts/AppLayout'
+import { Logo } from '@/components/layouts/Logo'
+import AppProviders from './providers'
 
 const patrickHand = PatrickHand({
   subsets: ['latin'],
@@ -11,21 +10,19 @@ const patrickHand = PatrickHand({
 })
 
 export const metadata = {
-  title: "Hieu Khuong",
-  description: "Portfolio of Hieu Khuong",
-};
+  title: 'Hieu Khuong',
+  description: 'Portfolio of Hieu Khuong',
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={patrickHand.className}>
         <AppProviders>
-          <AppLayout>
-            {children}
-          </AppLayout>
+          <AppLayout>{children}</AppLayout>
+          <Logo />
         </AppProviders>
-        <Logo />
       </body>
     </html>
-  );
+  )
 }
