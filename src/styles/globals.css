@@ -22,6 +22,7 @@
   [data-theme='light'] {
     --text-default: black;
     --text-theme: black;
+    --bg-background: white;
     --bg-theme: black;
   }
 }
