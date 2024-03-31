@@ -1,4 +1,7 @@
 import '../styles/globals.css'
+import 'swiper/css'
+import 'swiper/css/free-mode'
+import 'swiper/css/pagination'
 import { Patrick_Hand as PatrickHand } from 'next/font/google'
 import { AppLayout } from '@/components/layouts/AppLayout'
 import { Logo } from '@/components/layouts/Logo'

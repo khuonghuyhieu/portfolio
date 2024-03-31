@@ -1,8 +1,6 @@
 'use client'
 
 import { useTheme } from 'next-themes'
-import Image from 'next/image'
-import { useMemo } from 'react'
 import { assets, THEME } from '@/constants'
 
 const ThemeLogo = () => {
@@ -19,10 +17,8 @@ const ThemeLogo = () => {
 }
 
 export const Logo = () => {
-  const { resolvedTheme } = useTheme()
-
   return (
-    <div className="absolute bottom-10 left-10">
+    <div className="fixed bottom-10 left-10">
       <ThemeLogo />
     </div>
   )
