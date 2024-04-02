@@ -53,7 +53,7 @@ export const TECHNICAL_USING = [
     title: 'Languages',
     items: [
       {
-        name: 'Javascript (Native)',
+        name: 'Javascript',
         icon: <JavascriptIcon />,
       },
       {

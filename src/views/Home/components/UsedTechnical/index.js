@@ -22,10 +22,7 @@ export const UsedTechnical = () => {
       <div className="flex justify-between gap-10 overflow-y-auto">
         {TECHNICAL_USING.map((item) => {
           return (
-            <div
-              key={item?.title}
-              className="h-fit min-w-[200px] rounded-xl border border-gray-500 p-5"
-            >
+            <div key={item?.title} className="h-fit rounded-xl border border-gray-500 p-5">
               <div className="mb-4 text-xl">{item?.title}</div>
               <div className="space-y-4">{(item.items || []).map(renderTechItem)}</div>
             </div>
