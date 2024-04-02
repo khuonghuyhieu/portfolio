@@ -17,12 +17,15 @@ export const UsedTechnical = () => {
   const renderTechItem = (item) => <TechItem item={item} />
 
   return (
-    <section className="m-auto mb-20 max-w-[1024px]">
+    <section className="m-auto mb-20 max-w-[1024px] max-sm:px-3">
       <h1 className="mb-5 text-2xl text-gray-600">Technical I have been using</h1>
-      <div className="grid auto-cols-max grid-cols-4 gap-10">
+      <div className="flex justify-between gap-10 overflow-y-auto">
         {TECHNICAL_USING.map((item) => {
           return (
-            <div key={item?.title} className="h-fit rounded-xl border border-gray-500 p-5">
+            <div
+              key={item?.title}
+              className="h-fit min-w-[200px] rounded-xl border border-gray-500 p-5"
+            >
               <div className="mb-4 text-xl">{item?.title}</div>
               <div className="space-y-4">{(item.items || []).map(renderTechItem)}</div>
             </div>

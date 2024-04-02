@@ -13,9 +13,9 @@ export const HomeView = () => {
       <InformationSection />
       <SliderTechnical />
       <UsedTechnical />
-      <section className="m-auto mb-20 max-w-[1024px]">
+      <section className="m-auto mb-20 max-w-[1024px] max-sm:px-3">
         <div className="flex items-center justify-between rounded-full bg-gray-800 p-5">
-          <div className="text-xl">Follow me</div>
+          <div className="text-xl text-white">Follow me</div>
           <div className="flex gap-3">
             <Link opacity href={routes.CONTACT.GITHUB} target="_blank">
               <GitHubIcon />

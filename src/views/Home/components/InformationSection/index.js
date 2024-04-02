@@ -3,9 +3,9 @@ import { routes } from '@/constants'
 
 export const InformationSection = () => {
   return (
-    <section className="m-auto mt-20 max-w-[1024px]">
-      <div className="flex justify-between">
-        <div className="max-w-[500px]">
+    <section className="m-auto mt-20 max-w-[1024px] max-sm:px-3">
+      <div className="flex max-sm:flex-col-reverse max-sm:items-center lg:justify-between">
+        <div className="max-w-[500px] max-sm:text-center">
           <h1 className="text-6xl">Hi, Khuong Huy Hieu</h1>
           <p className="mt-8 text-lg text-gray-600">
             Developer with <span className=" text-theme">2+ years</span> of experience as
@@ -16,7 +16,7 @@ export const InformationSection = () => {
             outstanding engineer, I focus on solving problems, particularly those faced by
             customers.
           </p>
-          <div className="mt-6 flex items-center gap-4 text-lg">
+          <div className="mt-6 flex items-center gap-4 text-lg max-sm:justify-center">
             <a
               href="/cv/Khuong_Huy_Hieu_resume.pdf"
               download
@@ -37,7 +37,7 @@ export const InformationSection = () => {
             </p>
           </div>
         </div>
-        <div className="avatar-custom" />
+        <div className="avatar-custom max-sm:h-[348px]" />
       </div>
     </section>
   )

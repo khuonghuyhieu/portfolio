@@ -37,7 +37,7 @@ export const Header = () => {
   const renderNavItem = (item) => <NavItem key={item?.label} item={item} />
 
   return (
-    <header className="mt-3 flex items-center justify-center gap-10">
+    <header className="mt-3 flex items-center justify-center gap-10 max-sm:hidden">
       <div className="rounded-full bg-gray-800 p-4">
         <nav className="flex gap-10 text-purple lg:text-xl">
           {HeaderType.map(renderNavItem)}
