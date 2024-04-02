@@ -19,7 +19,7 @@ export const Sliders = () => {
         return (
           <SwiperSlide
             key={item?.name}
-            className={`max-w-[410px] rounded-3xl bg-[#C2C2C2] py-10 pl-10`}
+            
           >
             <SliderItem item={item} />
           </SwiperSlide>
