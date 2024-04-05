@@ -12,13 +12,25 @@ const patrickHand = PatrickHand({
   weight: ['400'],
 })
 
-export const metadata = {
-  title: 'Hieu Khuong',
-  description: 'Portfolio of Hieu Khuong',
-  openGraph: {
-    images: ['/logo_portfolio.png'],
-  },
+export async function generateMetadata({ params, searchParams }, parent) {
+  const previousImages = (await parent).openGraph?.images || []
+
+  return {
+    title: 'Hieu Khuong',
+    description: 'Portfolio of Hieu Khuong',
+    openGraph: {
+      images: ['/logo_portfolio.png', ...previousImages],
+    },
+  }
 }
+
+// export const metadata = {
+//   title: 'Hieu Khuong',
+//   description: 'Portfolio of Hieu Khuong',
+//   openGraph: {
+//     images: ['/logo_portfolio.png'],
+//   },
+// }
 
 export default function RootLayout({ children }) {
   return (
