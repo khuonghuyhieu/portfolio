@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        main: 'var(--main) / <alpha-value>',
         white: 'var(--white)',
         'gray-900': 'var(--gray-900)',
         'gray-800': 'var(--gray-800)',
