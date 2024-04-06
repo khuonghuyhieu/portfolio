@@ -20,6 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* <head>
+        <meta property="og:title" content="Title Here" />
+        <meta property="og:description" content="Description Here" />
+        <meta property="og:image" content="image_url_here" />
+      </head> */}
       <body className={patrickHand.className}>
         <AppProviders>
           <AppLayout>{children}</AppLayout>

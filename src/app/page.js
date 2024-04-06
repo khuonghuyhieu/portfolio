@@ -5,7 +5,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 
   return {
     openGraph: {
-      images: ['/images/logo_portfolio.png', ...previousImages],
+      images: ['https://i.ibb.co/99S4wP1/avatar.jpg', ...previousImages],
     },
   }
 }
