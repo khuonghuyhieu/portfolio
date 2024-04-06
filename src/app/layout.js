@@ -15,9 +15,6 @@ const patrickHand = PatrickHand({
 export const metadata = {
   title: 'Hieu Khuong',
   description: 'Portfolio of Hieu Khuong',
-  openGraph: {
-    images: ['/logo_portfolio.png'],
-  },
 }
 
 export default function RootLayout({ children }) {
